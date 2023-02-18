@@ -1,0 +1,7 @@
+body {
+  min-height: 100vh;
+  height: 100%;
+  background: var(--bg-hills) 100% bottom no-repeat,
+    var(--bg-stars),
+    var(--bg-color);
+}

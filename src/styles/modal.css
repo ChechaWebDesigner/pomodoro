@@ -1,0 +1,195 @@
+/* Container Modal */
+
+.container-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0007;
+}
+
+.row-flex-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Modal */
+
+.container-modal .modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+}
+
+.container-modal .modal>div {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+/* Titles */
+
+.container-modal h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.container-modal h4 {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+/* Title Settings */
+
+.container-title-settings {
+  border-bottom: 1px solid #999;
+}
+
+/* Btn Close */
+
+.btn-close-modal {
+  color: #777;
+  font-weight: bold;
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  transition: border-color 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-close-modal:hover {
+  border-bottom: var(--bg-main-color);
+}
+
+/* Container inputs time */
+
+.time-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.container-input-time {
+  position: relative;
+}
+
+/* Description input time */
+
+.description-input-time {
+  display: block;
+  padding: 0.25rem 0;
+  color: #999;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Inputs TIme */
+
+.input-time {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.65rem;
+  background-color: #aaa;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.input-time::-webkit-inner-spin-button,
+.input-time::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+/* Spinners */
+
+.btn-spin {
+  position: absolute;
+  left: 85%;
+  color: #555;
+  background-color: transparent;
+  font-size: 1.2rem;
+  transform: scaleX(2.2);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-spin.inner {
+  top: 0.25rem;
+}
+
+.btn-spin.outer {
+  bottom: 0.25rem;
+  transform: rotateX(180deg) scaleX(2.2);
+}
+
+/* Input color */
+
+#txt-main-color {
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+/* Button save */
+
+#btn-save {
+  padding: 1rem 2rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 0 #000;
+  background-color: var(--bg-main-color);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.container-btn-save {
+  text-align: center;
+}
+
+#btn-save:hover {
+  opacity: .8;
+}
+
+@media screen and (min-width: 700px) {
+  .container-modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-modal .modal {
+    width: 40%;
+    min-width: 500px;
+    max-width: 45rem;
+    height: fit-content;
+    min-height: fit-content;
+    border-radius: .5rem;
+  }
+}

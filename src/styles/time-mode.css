@@ -1,0 +1,46 @@
+.time-mode {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: #0005;
+}
+
+.time-mode,
+.time-mode a {
+  border-radius: 0.75rem;
+}
+
+.time-mode a {
+  color: #555;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.time-mode a.active {
+  background-color: var(--bg-main-color);
+  color: #000;
+}
+
+@media screen and (min-width: 350px) {
+  .time-mode {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .time-mode,
+  .time-mode a {
+    border-radius: 25rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .time-mode a {
+    font-size: 1rem;
+  }
+}

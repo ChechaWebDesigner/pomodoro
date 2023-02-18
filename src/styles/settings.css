@@ -1,0 +1,32 @@
+.container-settings {
+  width: fit-content;
+  margin: auto auto 1rem;
+}
+
+.container-settings .btn-settings{
+  display: inline-block;
+  width: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container-settings .btn-settings svg path {
+  color: #fff;
+  transition: transform 0.2s ease-in-out;
+  
+}
+
+.container-settings:hover .btn-settings {
+  transform: scale(1.05);
+}
+
+.container-settings:hover .btn-settings svg path {
+  color: #eee;
+}
+
+@media screen and (min-width: 480px) {
+  .container-settings .btn-settings {
+    width: 2.5rem;
+  }
+}

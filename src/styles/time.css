@@ -1,0 +1,65 @@
+.container-pomodoro {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #120520;
+  border-radius: 50%;
+  box-shadow: -12px -6px #0003 inset, -5px -5px 20px #fff1;
+}
+
+.container-time {
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.data-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 93%;
+  height: 93%;
+  background: #120520;
+  border-radius: 50%;
+}
+
+.restant-time {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.btn-clock {
+  padding: 0;
+  background-color: transparent;
+  color: #eee;
+  font-size: .75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btn-pause, .btn-start {
+  margin-top: 0.5rem;  
+}
+
+@media screen and (min-width: 480px) {
+  .container-time {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .restant-time {
+    font-size: 3.5rem;
+  }
+
+  .btn-clock {
+    font-size: 1.25rem;
+  }
+}
